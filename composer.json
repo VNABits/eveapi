@@ -1,0 +1,36 @@
+{
+  "name": "exodus4d/pathfinder_esi",
+  "description": "ESI API library for Pathfinder",
+  "type": "library",
+  "homepage": "https://github.com/exodus4d/pathfinder_esi",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mark Friedrich",
+      "email": "pathfinder@exodus4d.de"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "lock": false
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/exodus4d/pathfinder_esi"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Exodus4D\\ESI\\": "app/"
+    }
+  },
+  "require": {
+    "php-64bit": ">=7.2",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "6.5.*",
+    "caseyamcl/guzzle_retry_middleware": "2.3.*",
+    "cache/void-adapter": "1.0.*"
+  }
+}
